@@ -1,8 +1,8 @@
 # ⭐ Dinesh Tours & Travels ⭐
 
-Welcome to **Dinesh Tours & Travels**, a modern and user-friendly travel booking website built with **React** and *
-*Tailwind CSS**. This project is designed to help users explore destinations, make bookings easily, and manage travel
-plans — all in one place.
+Welcome to **Dinesh Tours & Travels**, a modern and user-friendly travel booking website built with React and Tailwind
+CSS. This project is designed to help users explore destinations, make bookings easily, and manage travel plans — all in
+one place.
 
 ## 🛠️ Tech Stack
 
@@ -20,8 +20,16 @@ plans — all in one place.
 
 ## ▶️ How to Run the Project
 
+### ⚛️ Start
+
 1. Install dependencies - `npm install`
 2. Start the development server - `npm run dev`
+
+### ❄️ Deploy
+
+1. Remove `dist` folder from locally
+2. Build project - `npm run build`
+3. Deploy project - `npm run deploy`
 
 ## 📬 Get in Touch
 
