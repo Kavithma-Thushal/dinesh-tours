@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Kavithma-Thushal.github.io/dinesh-tours-&-travels",
+  "homepage": "https://Kavithma-Thushal.github.io/dinesh-tours",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
