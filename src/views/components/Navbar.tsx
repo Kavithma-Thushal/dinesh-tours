@@ -13,7 +13,7 @@ export function Navbar() {
     return (
         <nav className="bg-darkBlue text-white p-2 fixed w-full z-50">
             <div className="container mx-auto flex justify-between items-center">
-                <a href="https://github.com/Kavithma-Thushal/my-portfolio-v2" target="_blank" rel="noopener noreferrer">
+                <a href="" rel="noopener noreferrer">
                     <div className="flex items-center">
                         <img src={logo} className="h-14 ml-5 mr-5" alt="Nav-logo"/>
                         <div className="text-2xl font-bold">DINESH TOURS & <span

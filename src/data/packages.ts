@@ -10,7 +10,7 @@ export interface PackageType {
 export const packages: PackageType[] = [
     {
         id: 1,
-        name: "Kandy & Nuwara Eliya Tour",
+        name: "Kandy Tour",
         days: "3 Days / 2 Nights",
         price: "LKR 45,000",
         image: "/packages/kandy.jpg",

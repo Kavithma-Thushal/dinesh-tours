@@ -1,6 +1,6 @@
 export function Footer() {
     return (
-        <footer className="bg-darkBlue text-gray-300 text-sm py-6 flex flex-col items-center mt-10">
+        <footer className="bg-darkBlue text-gray-300 text-sm py-6 flex flex-col items-center">
             <div className="flex flex-col sm:flex-row sm:space-x-10 space-y-2 sm:space-y-0 text-center">
                 <a href="/about" className="hover:text-neonBlue transition-colors duration-300">About Us</a>
                 <a href="/packages" className="hover:text-neonBlue transition-colors duration-300">Tour Packages</a>
