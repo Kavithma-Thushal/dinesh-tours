@@ -25,7 +25,6 @@ export function Navbar() {
                     <Link to="/home" className="hover:text-neonBlue transition-colors duration-300">HOME</Link>
                     <Link to="/about" className="hover:text-neonBlue transition-colors duration-300">ABOUT</Link>
                     <Link to="/packages" className="hover:text-neonBlue transition-colors duration-300">PACKAGES</Link>
-                    <Link to="/bookings" className="hover:text-neonBlue transition-colors duration-300">BOOKINGS</Link>
                     <Link to="/contacts" className="hover:text-neonBlue transition-colors duration-300">CONTACTS</Link>
                 </div>
 
@@ -43,8 +42,6 @@ export function Navbar() {
                           className="hover:text-neonBlue transition-colors duration-300">ABOUT</Link>
                     <Link to="/packages" onClick={toggleMenu}
                           className="hover:text-neonBlue transition-colors duration-300">PACKAGES</Link>
-                    <Link to="/bookings" onClick={toggleMenu}
-                          className="hover:text-neonBlue transition-colors duration-300">BOOKINGS</Link>
                     <Link to="/contacts" onClick={toggleMenu}
                           className="hover:text-neonBlue transition-colors duration-300">CONTACTS</Link>
                 </div>
