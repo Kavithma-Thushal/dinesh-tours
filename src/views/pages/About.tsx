@@ -1,4 +1,4 @@
-import aboutImg from "../../assets/hero/hero1.jpg";
+import aboutImg from "../../assets/hero.jpg";
 
 export function About() {
     return (
