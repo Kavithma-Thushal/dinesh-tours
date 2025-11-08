@@ -36,7 +36,7 @@ export function Navbar() {
 
                 {/* Menu Items */}
                 <div
-                    className={`hidden lg:flex flex-1 justify-center space-x-10 font-semibold text-lg ${isScrolled ? "text-black" : "text-white"}`}>
+                    className={`hidden 2xl:flex flex-1 justify-center space-x-10 font-semibold text-lg ${isScrolled ? "text-black" : "text-white"}`}>
                     <a href="#home" className="hover:text-blue-500">HOME</a>
                     <a href="#about" className="hover:text-blue-500">ABOUT US</a>
                     <a href="#destinations" className="hover:text-blue-500">DESTINATIONS</a>
@@ -46,7 +46,7 @@ export function Navbar() {
                 </div>
 
                 {/* BOOK NOW Button */}
-                <div className="hidden lg:block">
+                <div className="hidden 2xl:block">
                     <a href="#packages"
                        className="bg-blue-500 text-white px-4 py-2 text-sm rounded-full hover:scale-105 inline-block mr-8">
                         BOOK NOW
@@ -54,7 +54,7 @@ export function Navbar() {
                 </div>
 
                 {/* Mobile Menu Toggle */}
-                <div className="lg:hidden flex items-center">
+                <div className="2xl:hidden flex items-center">
                     <button onClick={toggleMenu}
                             className={`${isScrolled ? "text-black" : "text-white"} focus:outline-none`}>
                         {isOpen ? <FaTimes size={28}/> : <FaBars size={28}/>}
@@ -63,7 +63,7 @@ export function Navbar() {
             </div>
 
             {/* Mobile Menu */}
-            <div className={`${isOpen ? "block" : "hidden"} lg:hidden bg-transparent backdrop-blur-md`}>
+            <div className={`${isOpen ? "block" : "hidden"} 2xl:hidden bg-transparent backdrop-blur-md`}>
                 <div
                     className={`flex flex-col items-center space-y-5 py-5 font-semibold text-lg ${isScrolled ? "text-black" : "text-white"}`}>
                     <a href="#home" onClick={toggleMenu} className="hover:text-blue-500">HOME</a>
