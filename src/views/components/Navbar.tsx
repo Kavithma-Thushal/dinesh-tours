@@ -48,7 +48,7 @@ export function Navbar() {
                 {/* BOOK NOW Button */}
                 <div className="hidden 2xl:block">
                     <a href="#packages"
-                       className="bg-blue-500 text-white px-4 py-2 text-sm rounded-full hover:scale-105 inline-block mr-8">
+                       className="bg-blue-500 text-white px-4 py-2 text-sm rounded-full hover:scale-105 inline-block mr-8 transition duration-300">
                         BOOK NOW
                     </a>
                 </div>
@@ -73,7 +73,7 @@ export function Navbar() {
                     <a href="#gallery" onClick={toggleMenu} className="hover:text-blue-500">GALLERY</a>
                     <a href="#contacts" onClick={toggleMenu} className="hover:text-blue-500">CONTACT US</a>
                     <a href="#packages"
-                       className="bg-blue-500 text-white px-4 py-2 text-sm rounded-full hover:scale-105 inline-block mt-4">
+                       className="bg-blue-500 text-white px-4 py-2 text-sm rounded-full hover:scale-105 inline-block mt-4 transition duration-300">
                         BOOK NOW
                     </a>
                 </div>
