@@ -1,4 +1,4 @@
-import {FaFacebookF, FaInstagram, FaTiktok, FaTwitter, FaLinkedinIn, FaWhatsapp} from "react-icons/fa";
+import {FaFacebookF, FaInstagram, FaTiktok, FaTwitter, FaYoutube, FaLinkedinIn, FaWhatsapp} from "react-icons/fa";
 
 export function Footer() {
     return (
@@ -58,6 +58,10 @@ export function Footer() {
                         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
                            className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 hover:bg-sky-500 transition duration-300">
                             <FaTwitter className="text-white"/>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
+                           className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 hover:bg-red-600 transition duration-300">
+                            <FaYoutube className="text-white"/>
                         </a>
                         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
                            className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 hover:bg-blue-700 transition duration-300">

@@ -12,7 +12,10 @@ export function Navbar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50);
+            const homeSection = document.getElementById("home");
+            if (!homeSection) return;
+            const homeBottom = homeSection.offsetTop + homeSection.offsetHeight;
+            setIsScrolled(window.scrollY > homeBottom);
         };
 
         handleScroll();
