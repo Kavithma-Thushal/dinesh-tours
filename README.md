@@ -2,7 +2,7 @@
 
 Welcome to **Dinesh Tours & Travels**, a modern and user-friendly travel booking website built with React and Tailwind
 CSS. This project is designed to help users explore destinations, make bookings easily, and manage travel plans — all in
-one place
+one place.
 
 ## 🛠️ Tech Stack
 
