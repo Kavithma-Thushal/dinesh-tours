@@ -12,15 +12,16 @@ export function Navbar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 50) {
-                setIsScrolled(true);
-            } else {
-                setIsScrolled(false);
-            }
+            setIsScrolled(window.scrollY > 50);
         };
+
+        handleScroll();
+
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    const textColor = isScrolled ? "text-black" : "text-white";
 
     return (
         <nav className="fixed w-full z-50 bg-transparent backdrop-blur-lg p-4 border-b border-white/30">
@@ -29,14 +30,13 @@ export function Navbar() {
                 {/* Logo */}
                 <a href="#" className="flex items-center">
                     <img src={logo} className="h-14 mr-3" alt="Nav-logo"/>
-                    <div className={`text-2xl font-bold ${isScrolled ? "text-black" : "text-white"}`}>
+                    <div className={`text-2xl font-bold ${textColor}`}>
                         DINESH TOURS & <span className="text-blue-500">TRAVELS</span>
                     </div>
                 </a>
 
                 {/* Menu Items */}
-                <div
-                    className={`hidden 2xl:flex flex-1 justify-center space-x-10 font-semibold text-lg ${isScrolled ? "text-black" : "text-white"}`}>
+                <div className={`hidden 2xl:flex flex-1 justify-center space-x-10 font-semibold text-lg ${textColor}`}>
                     <a href="#home" className="hover:text-blue-500">HOME</a>
                     <a href="#about" className="hover:text-blue-500">ABOUT US</a>
                     <a href="#destinations" className="hover:text-blue-500">DESTINATIONS</a>
@@ -55,8 +55,7 @@ export function Navbar() {
 
                 {/* Mobile Menu Toggle */}
                 <div className="2xl:hidden flex items-center">
-                    <button onClick={toggleMenu}
-                            className={`${isScrolled ? "text-black" : "text-white"} focus:outline-none`}>
+                    <button onClick={toggleMenu} className={`${textColor} focus:outline-none`}>
                         {isOpen ? <FaTimes size={28}/> : <FaBars size={28}/>}
                     </button>
                 </div>
@@ -64,8 +63,7 @@ export function Navbar() {
 
             {/* Mobile Menu */}
             <div className={`${isOpen ? "block" : "hidden"} 2xl:hidden bg-transparent backdrop-blur-md`}>
-                <div
-                    className={`flex flex-col items-center space-y-5 py-5 font-semibold text-lg ${isScrolled ? "text-black" : "text-white"}`}>
+                <div className={`flex flex-col items-center space-y-5 py-5 font-semibold text-lg ${textColor}`}>
                     <a href="#home" onClick={toggleMenu} className="hover:text-blue-500">HOME</a>
                     <a href="#about" onClick={toggleMenu} className="hover:text-blue-500">ABOUT US</a>
                     <a href="#destinations" onClick={toggleMenu} className="hover:text-blue-500">DESTINATIONS</a>
