@@ -2,8 +2,8 @@ import aboutImg from "../../assets/hero.jpg";
 
 export function About() {
     return (
-        <section
-            className="flex flex-col md:flex-row items-center md:px-20 py-16 space-y-8 md:space-y-0 md:space-x-12 pt-36 mb-6">
+        <section id="about"
+                 className="relative flex flex-col md:flex-row items-center md:px-20 py-16 space-y-8 md:space-y-0 md:space-x-12 pt-36 mb-6">
             <div className="md:w-1/2">
                 <img src={aboutImg} className="rounded-2xl shadow-lg"/>
             </div>

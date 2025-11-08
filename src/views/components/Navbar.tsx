@@ -1,5 +1,4 @@
 import {useState} from "react";
-import {Link} from "react-router-dom";
 import {FaBars, FaTimes} from "react-icons/fa";
 import logo from "../../assets/logo.png";
 
@@ -22,10 +21,10 @@ export function Navbar() {
                 </a>
 
                 <div className="hidden lg:flex space-x-10 mr-8 text-1xl font-semibold">
-                    <Link to="/home" className="hover:text-neonBlue transition-colors duration-300">HOME</Link>
-                    <Link to="/about" className="hover:text-neonBlue transition-colors duration-300">ABOUT</Link>
-                    <Link to="/packages" className="hover:text-neonBlue transition-colors duration-300">PACKAGES</Link>
-                    <Link to="/contacts" className="hover:text-neonBlue transition-colors duration-300">CONTACTS</Link>
+                    <a href="#home" className="hover:text-neonBlue transition-colors duration-300">HOME</a>
+                    <a href="#about" className="hover:text-neonBlue transition-colors duration-300">ABOUT</a>
+                    <a href="#packages" className="hover:text-neonBlue transition-colors duration-300">PACKAGES</a>
+                    <a href="#contacts" className="hover:text-neonBlue transition-colors duration-300">CONTACTS</a>
                 </div>
 
                 <div className="lg:hidden flex items-center">
@@ -36,14 +35,14 @@ export function Navbar() {
 
             <div className={`${isOpen ? "block" : "hidden"} md:hidden bg-darkBlue`}>
                 <div className="flex flex-col items-center space-y-5 py-5">
-                    <Link to="/home" onClick={toggleMenu}
-                          className="hover:text-neonBlue transition-colors duration-300">HOME</Link>
-                    <Link to="/about" onClick={toggleMenu}
-                          className="hover:text-neonBlue transition-colors duration-300">ABOUT</Link>
-                    <Link to="/packages" onClick={toggleMenu}
-                          className="hover:text-neonBlue transition-colors duration-300">PACKAGES</Link>
-                    <Link to="/contacts" onClick={toggleMenu}
-                          className="hover:text-neonBlue transition-colors duration-300">CONTACTS</Link>
+                    <a href="#home" onClick={toggleMenu}
+                       className="hover:text-neonBlue transition-colors duration-300">HOME</a>
+                    <a href="#about" onClick={toggleMenu}
+                       className="hover:text-neonBlue transition-colors duration-300">ABOUT</a>
+                    <a href="#packages" onClick={toggleMenu}
+                       className="hover:text-neonBlue transition-colors duration-300">PACKAGES</a>
+                    <a href="#contacts" onClick={toggleMenu}
+                       className="hover:text-neonBlue transition-colors duration-300">CONTACTS</a>
                 </div>
             </div>
         </nav>

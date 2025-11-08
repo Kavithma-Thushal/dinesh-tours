@@ -2,7 +2,7 @@ import {packages} from "../../data/packages";
 
 export function Packages() {
     return (
-        <section className="pt-28 px-8 md:px-20 pb-20">
+        <section id="packages" className="relative pt-28 px-8 md:px-20 pb-20">
             <h2 className="text-4xl font-bold text-center text-darkBlue mb-14">Our Tour Packages</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
                 {packages.map((pkg) => (

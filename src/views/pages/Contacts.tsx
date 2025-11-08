@@ -1,6 +1,6 @@
 export function Contacts() {
     return (
-        <section className="pt-28 px-6 md:px-20 pb-20">
+        <section id="contacts" className="relative pt-28 px-6 md:px-20 pb-20">
             <h2 className="text-4xl font-bold text-center text-darkBlue mb-8">Contact Us</h2>
             <p className="text-center text-gray-700">Have questions or want to book your next Sri Lankan
                 adventure? Fill out the form below and we’ll get back to you soon!</p>
