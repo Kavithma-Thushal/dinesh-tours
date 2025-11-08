@@ -17,15 +17,15 @@ export function Navbar() {
                     <div className="flex items-center">
                         <img src={logo} className="h-14 ml-5 mr-5" alt="Nav-logo"/>
                         <div className="text-2xl font-bold">DINESH TOURS &
-                            <span className="text-neonBlue">TRAVELS</span></div>
+                            <span className="text-blue-500"> TRAVELS</span></div>
                     </div>
                 </a>
 
                 <div className="hidden lg:flex space-x-10 mr-8 text-1xl font-semibold">
-                    <a href="#home" className="hover:text-neonBlue transition-colors duration-300">HOME</a>
-                    <a href="#about" className="hover:text-neonBlue transition-colors duration-300">ABOUT</a>
-                    <a href="#packages" className="hover:text-neonBlue transition-colors duration-300">PACKAGES</a>
-                    <a href="#contacts" className="hover:text-neonBlue transition-colors duration-300">CONTACTS</a>
+                    <a href="#home" className="hover:text-blue-500 transition-colors duration-300">HOME</a>
+                    <a href="#about" className="hover:text-blue-500 transition-colors duration-300">ABOUT</a>
+                    <a href="#packages" className="hover:text-blue-500 transition-colors duration-300">PACKAGES</a>
+                    <a href="#contacts" className="hover:text-blue-500 transition-colors duration-300">CONTACTS</a>
                 </div>
 
                 <div className="lg:hidden flex items-center">
@@ -37,13 +37,13 @@ export function Navbar() {
             <div className={`${isOpen ? "block" : "hidden"} md:hidden bg-darkBlue`}>
                 <div className="flex flex-col items-center space-y-5 py-5">
                     <a href="#home" onClick={toggleMenu}
-                       className="hover:text-neonBlue transition-colors duration-300">HOME</a>
+                       className="hover:text-blue-500 transition-colors duration-300">HOME</a>
                     <a href="#about" onClick={toggleMenu}
-                       className="hover:text-neonBlue transition-colors duration-300">ABOUT</a>
+                       className="hover:text-blue-500 transition-colors duration-300">ABOUT</a>
                     <a href="#packages" onClick={toggleMenu}
-                       className="hover:text-neonBlue transition-colors duration-300">PACKAGES</a>
+                       className="hover:text-blue-500 transition-colors duration-300">PACKAGES</a>
                     <a href="#contacts" onClick={toggleMenu}
-                       className="hover:text-neonBlue transition-colors duration-300">CONTACTS</a>
+                       className="hover:text-blue-500 transition-colors duration-300">CONTACTS</a>
                 </div>
             </div>
         </nav>
