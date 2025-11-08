@@ -7,7 +7,7 @@ import {Contacts} from "./views/pages/Contacts.tsx";
 
 export default function App() {
     return (
-        <div className="scroll-smooth">
+        <div>
             <Navbar/>
             <section id="home"><Home/></section>
             <section id="about"><About/></section>
