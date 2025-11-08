@@ -3,18 +3,19 @@ import {FaFacebookF, FaInstagram, FaTiktok, FaTwitter, FaLinkedinIn, FaWhatsapp}
 export function Footer() {
     return (
         <footer className="bg-[#040F36] text-gray-300 py-10 px-6">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
 
                 {/* About Us */}
-                <div>
+                <div className="text-center lg:text-left">
                     <h1 className="text-2xl font-bold text-white mb-3">Dinesh Tours & Travels</h1>
-                    <p className="text-sm leading-relaxed">Explore the beauty of Sri Lanka with Dinesh Tours & Travels —
-                        your trusted travel partner for unforgettable adventures, comfortable stays, and safe journeys
-                        across the island.</p>
+                    <p className="text-sm leading-relaxed">
+                        Explore the beauty of Sri Lanka with Dinesh Tours & Travels — your trusted travel partner for
+                        unforgettable adventures, comfortable stays, and safe journeys across the island.
+                    </p>
                 </div>
 
                 {/* Contact Us */}
-                <div>
+                <div className="text-center lg:text-left">
                     <h3 className="text-2xl font-bold text-white mb-3">Contact Us</h3>
                     <p className="text-sm mb-2">Feel free to contact and reach us!</p>
                     <ul className="text-sm space-y-1">
@@ -25,22 +26,23 @@ export function Footer() {
                 </div>
 
                 {/* Newsletter */}
-                <div>
+                <div className="text-center lg:text-left">
                     <h3 className="text-2xl font-bold text-white mb-3">Subscribe</h3>
                     <p className="text-sm mb-4">
                         Subscribe to our newsletter for the latest travel packages and updates!
                     </p>
 
-                    <form className="flex flex-col sm:flex-row items-center gap-2 mb-6">
+                    <form
+                        className="flex flex-col md:flex-col lg:flex-row items-center md:items-center lg:items-start justify-center lg:justify-start gap-2 mb-6 w-full">
                         <input type="email" placeholder="Enter your email"
-                               className="w-full sm:w-auto flex-1 px-4 py-2 rounded-lg text-gray-900 focus:outline-none"/>
+                               className="w-full sm:w-auto flex-1 px-4 py-2 rounded-full text-gray-900 focus:outline-none"/>
                         <button type="submit"
-                                className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg text-white transition duration-300">
+                                className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-full text-white transition duration-300">
                             Subscribe
                         </button>
                     </form>
 
-                    <div className="flex justify-start space-x-4">
+                    <div className="flex justify-center lg:justify-start space-x-4">
                         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
                            className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 hover:bg-blue-600 transition duration-300">
                             <FaFacebookF className="text-white"/>
