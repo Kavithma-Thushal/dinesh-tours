@@ -39,12 +39,13 @@ export function Navbar() {
                 </a>
 
                 {/* Menu Items */}
-                <div className={`hidden 2xl:flex flex-1 justify-center space-x-10 font-semibold text-lg ${textColor}`}>
+                <div className={`hidden 2xl:flex flex-1 justify-center space-x-9 font-semibold text-lg ${textColor}`}>
                     <a href="#home" className="hover:text-blue-500">HOME</a>
                     <a href="#about" className="hover:text-blue-500">ABOUT US</a>
-                    <a href="#destinations" className="hover:text-blue-500">DESTINATIONS</a>
+                    <a href="#services" className="hover:text-blue-500">SERVICES</a>
                     <a href="#packages" className="hover:text-blue-500">PACKAGES</a>
                     <a href="#gallery" className="hover:text-blue-500">GALLERY</a>
+                    <a href="#reviews" className="hover:text-blue-500">REVIEWS</a>
                     <a href="#contacts" className="hover:text-blue-500">CONTACT US</a>
                 </div>
 
@@ -69,9 +70,10 @@ export function Navbar() {
                 <div className={`flex flex-col items-center space-y-5 py-5 font-semibold text-lg ${textColor}`}>
                     <a href="#home" onClick={toggleMenu} className="hover:text-blue-500">HOME</a>
                     <a href="#about" onClick={toggleMenu} className="hover:text-blue-500">ABOUT US</a>
-                    <a href="#destinations" onClick={toggleMenu} className="hover:text-blue-500">DESTINATIONS</a>
+                    <a href="#services" onClick={toggleMenu} className="hover:text-blue-500">SERVICES</a>
                     <a href="#packages" onClick={toggleMenu} className="hover:text-blue-500">PACKAGES</a>
                     <a href="#gallery" onClick={toggleMenu} className="hover:text-blue-500">GALLERY</a>
+                    <a href="#reviews" onClick={toggleMenu} className="hover:text-blue-500">REVIEWS</a>
                     <a href="#contacts" onClick={toggleMenu} className="hover:text-blue-500">CONTACT US</a>
                     <a href="#packages"
                        className="bg-blue-500 text-white px-4 py-2 text-sm rounded-full hover:scale-105 inline-block mt-4 transition duration-300">
