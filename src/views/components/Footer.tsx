@@ -34,7 +34,7 @@ export function Footer() {
 
                     <form
                         className="flex flex-col md:flex-col lg:flex-row items-center md:items-center lg:items-start justify-center lg:justify-start gap-2 mb-6 w-full">
-                        <input type="email" placeholder="Enter your email"
+                        <input type="email" placeholder="Enter your email" required
                                className="w-full sm:w-auto flex-1 px-4 py-2 rounded-full text-gray-900 focus:outline-none"/>
                         <button type="submit"
                                 className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-full text-white transition duration-300">
