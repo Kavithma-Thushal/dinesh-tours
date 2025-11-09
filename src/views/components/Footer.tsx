@@ -1,6 +1,26 @@
 import {FaFacebookF, FaInstagram, FaTiktok, FaTwitter, FaYoutube, FaLinkedinIn, FaWhatsapp} from "react-icons/fa";
 
 export function Footer() {
+    const handleSubscribe = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        const form = e.currentTarget;
+        const formData = new FormData(form);
+
+        try {
+            await fetch("https://formsubmit.co/ajax/anonymous54334@gmail.com", {
+                method: "POST",
+                body: formData
+            });
+
+            alert("Dinesh Tours & Travels subscribed successfully!");
+            form.reset();
+        } catch (error) {
+            console.error(error);
+            alert("Subscription failed!");
+        }
+    };
+
     return (
         <footer className="bg-[#03102E] text-gray-300 py-10 px-6">
             <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
@@ -32,9 +52,9 @@ export function Footer() {
                         Subscribe to our newsletter for the latest travel packages and updates!
                     </p>
 
-                    <form
-                        className="flex flex-col md:flex-col lg:flex-row items-center md:items-center lg:items-start justify-center lg:justify-start gap-2 mb-6 w-full">
-                        <input type="email" placeholder="Enter your email" required
+                    <form onSubmit={handleSubscribe}
+                          className="flex flex-col md:flex-col lg:flex-row items-center md:items-center lg:items-start justify-center lg:justify-start gap-2 mb-6 w-full">
+                        <input type="email" name="email" placeholder="Enter your email" required
                                className="w-full sm:w-auto flex-1 px-4 py-2 rounded-full text-gray-900 focus:outline-none"/>
                         <button type="submit"
                                 className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-full text-white transition duration-300">
